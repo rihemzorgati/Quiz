@@ -21,7 +21,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <!-- Title -->
-    <title>Selamat datang - <?php
+    <title>Welcome - <?php
                             $data['user'] = $this->db->get_where('siswa', ['email' =>
                             $this->session->userdata('email')])->row_array();
                             echo $data['user']['nama'];
@@ -66,13 +66,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hi, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Home</a>
                             </li>
                             <li class="nav-item "><a class="nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log
                                     Out</a>
@@ -91,11 +91,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="bg-white mx-auto p-4 buat-text" data-aos="fade-down" data-aos-duration="1400" style="width: 100%; border-radius:10px;">
             <div class="row" style="color: black; font-family: 'poppins';">
                 <div class="col-md-12 mt-1">
-                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Silahkan pilih mata pelajaran !
+                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Please select a subject !
                     </h1>
-                    <p>Hello Students! , Ini merupakan halaman mapel learnify ! Silahkan pilih mapel yang akan kamu
-                        akses
-                        dan taddaa video dan materi siap disaksikan! Selamat belajar ya students!</p>
+                    <p>Hello Students! This is a Learnify folder page! Please select the folder that you will access and add videos and materials ready to be watched! Happy learning Students!</p>
                     <hr>
 
                     <h4 data-aos="fade-down" data-aos-duration="1700"><?php
@@ -103,7 +101,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                                         $this->session->userdata('email')])->row_array();
                                                                         echo $data['user']['nama'];
                                                                         ?> - Learnify Students</h3>
-                        <h5>Mata Pelajaran Kelas X</h5>
+                        <h5>Class Subjects 1</h5>
                 </div>
             </div>
         </div>
@@ -117,47 +115,21 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
             <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-right">
                 <a href="<?= base_url('materi/matematika_x') ?>">
                     <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/matematika.png" class="card-img-top" alt="...">
+                        <img src="<?= base_url('assets/') ?>img/matematikaa.png" class="card-img-top" alt="...">
                     </div>
                 </a>
             </div>
             <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-down">
                 <a href="<?= base_url('materi/ipa_x') ?>">
                     <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/ipa.png" class="card-img-top" alt="...">
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-left">
-                <a href="<?= base_url('materi/indo_x') ?>">
-                    <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/Bahasa Indonesia.png" class="card-img-top" alt="...">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Lesson Card 2 -->
-    <div class="container">
-        <div class="row mt-4 mb-5">
-            <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-right">
-                <a href="<?= base_url('materi/inggris_x') ?>">
-                    <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/Bahasa Inggris.png" class="card-img-top" alt="...">
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-down">
-                <a href="<?= base_url('materi/agama_x') ?>">
-                    <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/agama.png" class="card-img-top" alt="...">
+                        <img src="<?= base_url('assets/') ?>img/computer.png" class="card-img-top" alt="...">
                     </div>
                 </a>
             </div>
             <div class="col-md-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-left">
                 <a href="<?= base_url('user') ?>">
                     <div class="card-kelas">
-                        <img src="<?= base_url('assets/') ?>img/Kembali.png" class="card-img-top" alt="...">
+                        <img src="<?= base_url('assets/') ?>img/return.png" class="card-img-top" alt="...">
                     </div>
                 </a>
             </div>

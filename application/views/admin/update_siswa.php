@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Update Data Siswa - Learnify</title>
+    <title>Student Data Update - Learnify</title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -80,33 +80,33 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <li class="nav-item dropdown ">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Student Management</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Student</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Teacher Management</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Teacher</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Material Management </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Material</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
                                 </li>
                             </ul>
                         </li>
@@ -115,10 +115,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
                                 <span>Developer</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
                                         Learnify</a>
                                 </li>
 
@@ -134,12 +133,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Update data siswa</h2>
+                                <h2 class="card-title" style="color: black;">Update student data</h2>
                                 <hr>
-                                <p class="card-text">After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
-                                </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">I understand and want to continue ⭢</a>
                             </div>
                         </div>
                     </div>
@@ -163,18 +159,16 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             </div>
                             <br>
                             <div id="detail" class="col-md-12 bg-white p-3" style="border-radius:3px;box-shadow:rgba(0, 0, 0, 0.03) 0px 4px 8px 0px;">
-                                <h1 class="font-weight-bold card-title text-center" style="color: black;">Update Data
-                                    Siswa
+                                <h1 class="font-weight-bold card-title text-center" style="color: black;">Student Data Update
                                 </h1>
-                                <p class="text-center" style="line-height: 5px;">Silahkan isi data dibawah untuk update
-                                    data, dan upload file diatas untuk update data profile picture</p>
+                                <p class="text-center" style="line-height: 5px;">Please fill in the data below to update the data, and upload the file above to update the profile picture data</p>
                                 <hr>
                                 <div class="form-group">
                                     <input type="hidden" name="id" value="<?= $u->id ?>">
                                     <input type="hidden" name="password" value="<?= $u->password ?>">
                                     <input type="hidden" name="is_active" value="<?= $u->is_active ?>">
                                     <input type="hidden" name="date_created" value="<?= $u->date_created ?>">
-                                    <label for="exampleInputEmail1" class="font-weight-bold" style="font-size: 20px;">Nama</label>
+                                    <label for="exampleInputEmail1" class="font-weight-bold" style="font-size: 20px;">Name</label>
                                     <input type=" text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="nama" value="<?= $u->nama ?>">
                                 </div>
                                 <div class="form-group">
@@ -194,7 +188,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Start Footer -->
     <footer class="main-footer">
         <div class="text-center">
-            Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+            Copyright &copy; 2022 <div class="bullet"></div><a href="https://github.com/rihemzorgati">Rihem Zorgati</a>
         </div>
     </footer>
     <!-- End Footer -->

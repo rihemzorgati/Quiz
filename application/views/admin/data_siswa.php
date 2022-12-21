@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Data Siswa - Learnify</title>
+    <title>Student Data - Learnify</title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -81,35 +81,35 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <li class="nav-item dropdown">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Student Management</li>
 
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Student</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Teacher Management</li>
 
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Teacher</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Material Management </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Material</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
                                 </li>
 
                             </ul>
@@ -119,10 +119,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
                                 <span>Developer</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
                                         Learnify</a>
                                 </li>
                             </ul>
@@ -136,11 +135,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <section class="section">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title" style="color: black;">Management Data Siswa Learnify</h2>
+                            <h2 class="card-title" style="color: black;">Learnify Student Data Management</h2>
                             <hr>
-                            <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction. </p>
-                            <a href="<?= base_url('user/registration') ?>" class="btn btn-success">Tambah
-                                Data Siswa ⭢ </a>
+                            <a href="<?= base_url('user/registration') ?>" class="btn btn-success">Add Student Data ⭢ </a>
                         </div>
                     </div>
                     <div class="row">
@@ -151,10 +148,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                         <thead class="thead-light">
                                             <tr class="text-center">
                                                 <th scope="col">ID</th>
-                                                <th scope="col">Nama Siswa</th>
+                                                <th scope="col">Student's name</th>
                                                 <th scope="col">Email</th>
-                                                <th scope="col">Gambar</th>
-                                                <th scope="col">Akun Aktif *</th>
+                                                <th scope="col">Picture</th>
+                                                <th scope="col">Active Account *</th>
                                                 <th scope="col">Detail</th>
                                                 <th scope="col">Option</th>
                                             </tr>
@@ -203,11 +200,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                             ?>
                                         </tbody>
                                     </table>
-                                    <p class="small font-weight-bold">* Angka 1 menunjukan akun telah aktif sedangkan
-                                        Angka
-                                        0 menunjukan akun
-                                        belum
-                                        aktif</p>
+                                    <p class="small font-weight-bold">* Number 1 indicates the account is active while Number 0 indicates the account is not active.</p>
                                 </div>
                             </div>
                         </div>
@@ -224,8 +217,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Data Siswa Telah Dirubah!',
-                text: 'Selamat data berubah!',
+                title: 'Student Data Has Been Changed!',
+                text: 'Happy data change!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -236,8 +229,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Data Siswa Telah Dihapus!',
-                text: 'Selamat data telah Dihapus!',
+                title: 'Student Data Has Been Deleted!',
+                text: 'Congratulations data has been deleted!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -249,7 +242,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Start Footer -->
     <footer class="main-footer">
         <div class="text-center">
-            Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+            Copyright &copy; 2022 <div class="bullet"></div> All rights reserved | This template is created by Computer Science and Research Department - Higher Institute of Management of Sousse
         </div>
     </footer>
     <!-- End Footer -->

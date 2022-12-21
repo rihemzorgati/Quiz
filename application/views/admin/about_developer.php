@@ -17,7 +17,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Tentang Developer - Learnify</title>
+	<title>About Developer - Learnify</title>
 	<!-- General CSS Files -->
 	<link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -76,34 +76,34 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 						<li class="nav-item dropdown ">
 							<a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
 						</li>
-						<li class="menu-header">Management Siswa</li>
+						<li class="menu-header">Student Management</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-								<span>Siswa</span></a>
+								<span>Student</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+								<li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
 							</ul>
 						</li>
-						<li class="menu-header">Management Guru</li>
+						<li class="menu-header">Teacher Management</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-								<span>Guru</span></a>
+								<span>Teacher</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+								<li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+								<li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
 								</li>
 
 							</ul>
 						</li>
-						<li class="menu-header">Management Materi</li>
+						<li class="menu-header">Material Management </li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-								<span>Materi</span></a>
+								<span>Material</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+								<li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+								<li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
 								</li>
 
 							</ul>
@@ -113,10 +113,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 							<a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
 								<span>Developer</span></a>
 							<ul class="dropdown-menu">
-								<li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-										Pembuat</a>
+								<li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
 								</li>
-								<li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+								<li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
 										Learnify</a>
 								</li>
 							</ul>
@@ -131,7 +130,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 					<div class="">
 						<div class="hero text-white hero-bg-image" data-background="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=649&q=80">
 							<div class="col-md-4 mx-auto rounded-circle bg-white p-3" style="border-radius:3px;box-shadow:rgba(0, 0, 0, 0.03) 0px 4px 8px 0px;">
-								<img src="<?= base_url('assets/img/') ?>Syauqi.jpg" class="card-img-top rounded-circle img-responsive" alt="...">
+								<img src="<?= base_url('assets/img/') ?>rihem.png" class="card-img-top rounded-circle img-responsive" alt="...">
 							</div>
 						</div>
 					</div>
@@ -139,9 +138,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 					<div class="">
 						<div class="card" style="width:100%;">
 							<div class="card-body">
-								<h2 class="card-title" style="color: black;">Syauqi Zaidan Khairan Khalaf</h2>
+								<h2 class="card-title" style="color: black;">Rihem Zorgati</h2>
 								<hr>
-								<p class="card-text">Perfectionist Web Developer with one years of experience as a Web Developer and Web Designer. Skilled at Designing and developing Websites. Excellent written and oral communication skills; capable of explaining complex software issues in easy-to-understand terms. </p>
+								<p class="card-text">Computer Science and Research Department. Skilled at Designing and developing Websites. Excellent written and oral communication skills; capable of explaining complex software issues in easy-to-understand terms. </p>
 							</div>
 						</div>
 					</div>
@@ -153,7 +152,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 			<!-- Start Footer -->
 			<footer class="main-footer">
 				<div class="text-center">
-					Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+					Copyright &copy; 2022 <div class="bullet"></div>All rights reserved | This template is created by Computer Science and Research Department - Higher Institute of Management of Sousse
 				</div>
 			</footer>
 			<!-- End Footer -->

@@ -17,7 +17,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Tambah Data Materi - Learnify </title>
+    <title>Add Material Data - Learnify </title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -79,34 +79,34 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <li class="nav-item dropdown ">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Student Management</li>
                         <li class="nav-item dropdown ">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Student</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Management Teacher</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Teacher</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
                                 </li>
 
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Material Management</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
                                 <span>Materi</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
                                 </li>
 
                             </ul>
@@ -116,10 +116,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
                                 <span>Developer</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
                                         Learnify</a>
                                 </li>
                             </ul>
@@ -134,20 +133,16 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Tambah Data Materi</h2>
+                                <h2 class="card-title" style="color: black;">Add Material Data</h2>
                                 <hr>
-                                <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
-                                </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">I understand and want to continue ⭢</a>
                             </div>
                         </div>
                         <div class="card card-success">
                             <div class="col-md-12 text-center">
                                 <p class="registration-title font-weight-bold display-4 mt-4" style="color:black; font-size: 50px;">
-                                    Tambah Materi</p>
-                                <p style="line-height:-30px;margin-top:-20px;">Silahkan isi data data yang diperlukan
-                                    dibawah </p>
+                                Add Material</p>
+                                <p style="line-height:-30px;margin-top:-20px;">Please fill in the required data below </p>
                                 <hr>
                             </div>
                             <div id="detail" class="card-body">
@@ -157,11 +152,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                             <input type="hidden" name="id">
                                             <div class="form-row">
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputEmail4">Nama Guru</label>
+                                                    <label for="inputEmail4">Teacher name</label>
                                                     <input autocomplete="off" required type="text" list="nama_guru" onkeyup="autofill()" id="namaguru" name="nama_guru" class="form-control">
-                                                    <small>List guru sudah tersedia di autocomplete, kalian hanya
-                                                        tinggal klik input area nya atau dengan cara menulis namanya dan
-                                                        klik guru yang akan dipilih.</small>
+                                                    <small>The list of teachers is already available in autocomplete, you just need to click on the input area or write their name and click on the teacher to be selected.</small>
                                                     <datalist id=nama_guru>
                                                         <?php
                                                         include "koneksi.php";
@@ -174,38 +167,32 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlInput1">Nama Mata Pelajaran</label>
-                                                <input type="text" class="form-control" name="nama_mapel" id="nama_mapel" required placeholder="Pilih nama guru yang valid agar nama mapel muncul" readonly>
-                                                <small>Jika nama mapel sudah berganti artinya nama guru yang kamu
-                                                    masukan di input area adalah valid! jika tidak muncul nama mapel
-                                                    anda harus klik input area nama guru dan pilih guru yang tersedia
-                                                    disana.</small>
+                                                <label for="exampleFormControlInput1">Subject Name</label>
+                                                <input type="text" class="form-control" name="nama_mapel" id="nama_mapel" required placeholder="Choose a valid teacher name so that the subject name appears" readonly>
+                                                <small>If the subject name has changed, it means that the teacher's name that you entered in the input area is valid! if the name of the folder does not appear, you have to click the input area of the teacher's name and select the teacher available there.</small>
                                             </div>
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <div class="custom-file">
                                                         <input required type="file" name="video" required class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                        <label class="custom-file-label" for="inputGroupFile01">Upload
-                                                            Video
-                                                            Materi Disini</label>
+                                                        <label class="custom-file-label" for="inputGroupFile01">Upload Material Video Here</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Deskripsi Materi</label>
+                                                <label for="exampleFormControlTextarea1">Material Description</label>
                                                 <textarea class="form-control" required name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputState">Kelas</label>
+                                                <label for="inputState">Class</label>
                                                 <select required id="inputState" name="kelas" class="form-control">
-                                                    <option selected>Pilih disini</option>
-                                                    <option value="X">X ( Kelas Sepuluh )</option>
-                                                    <option value="XI">XI ( Kelas Sebelas )</option>
-                                                    <option value="XII">XII ( Kelas Dua Belas )</option>
+                                                    <option selected>Choose here</option>
+                                                    <option value="X">1 ( First grade )</option>
+                                                    <option value="XI">2 ( Second grade )</option>
+                                                    <option value="XII">3 ( Third grade )</option>
                                                 </select>
                                             </div>
-                                            <button type="submit" class="btn btn-block btn-success">Tambah
-                                                materi ⭢</button>
+                                            <button type="submit" class="btn btn-block btn-success">Add material ⭢</button>
                                     </div>
                                 </form>
                             </div>
@@ -220,7 +207,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <!-- Start Footer -->
         <footer class="main-footer">
             <div class="text-center">
-                Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+                Copyright &copy; 2022 <div class="bullet"></div> All rights reserved | This template is created by Computer Science and Research Department - Higher Institute of Management of Sousse
             </div>
         </footer>
         <!-- End Footer -->

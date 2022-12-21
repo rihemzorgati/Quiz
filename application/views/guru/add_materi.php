@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
 <head>
     <meta charset="utf-8" />
-    <title>Learnify - Tambah Materi</title>
+    <title>Learnify - Add Material</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -180,18 +180,18 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 data-ktmenu-submenu-toggle="click"><a href="javascript:;"
                                     class="kt-menu__link kt-menu__toggle"><i
                                         class="kt-menu__link-icon flaticon2-calendar-5"></i><span
-                                        class="kt-menu__link-text">Tambah</span><i
+                                        class="kt-menu__link-text">Plus</span><i
                                         class="kt-menu__ver-arrow la la-angle-right"></i></a>
                                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
                                     <ul class="kt-menu__subnav">
                                         <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span
                                                 class="kt-menu__link"><span
-                                                    class="kt-menu__link-text">Tambah</span></span>
+                                                    class="kt-menu__link-text">Plus</span></span>
                                         </li>
                                         <li class="kt-menu__item " aria-haspopup="true"><a href="#"
                                                 class="kt-menu__link "><i
                                                     class="kt-menu__link-icon la la-commenting"></i><span
-                                                    class="kt-menu__link-text">Materi</span></a></li>
+                                                    class="kt-menu__link-text">Materials</span></a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -221,14 +221,14 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"
                                     data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;"
                                         class="kt-menu__link kt-menu__toggle"><span
-                                            class="kt-menu__link-text">Materi</span><i
+                                            class="kt-menu__link-text">Materials</span><i
                                             class="kt-menu__hor-arrow la la-angle-down"></i></a>
                                     <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
                                         <ul class="kt-menu__subnav">
                                             <li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;"
                                                     class="kt-menu__link "><i
                                                         class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span
-                                                        class="kt-menu__link-text">Tambah Materi</span></a></li>
+                                                        class="kt-menu__link-text">Add Materials</span></a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -264,7 +264,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                             class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
                                     </div>
                                     <div class="kt-user-card__name font-weight-bold">
-                                        Hai!, &nbsp;<?php
+                                        Hi!, &nbsp;<?php
 $data['user'] = $this->db->get_where('guru', ['email' =>
     $this->session->userdata('email')])->row_array();
 echo $data['user']['nama_guru'];
@@ -282,10 +282,10 @@ echo $data['user']['nama_guru'];
                                         </div>
                                         <div class="kt-notification__item-details">
                                             <div class="kt-notification__item-title kt-font-bold">
-                                                Tambah data materi
+                                                Add material data
                                             </div>
                                             <div class="kt-notification__item-time">
-                                                Tambah Materi Learnify
+                                                Add Learnify Material
                                             </div>
                                         </div>
                                     </a>
@@ -313,13 +313,13 @@ echo $data['user']['nama_guru'];
                         <div class="kt-subheader__main">
                             <h1 class="kt-subheader__title font-weight-bold"
                                 style="font-size: 35px !important; letter-spacing:-1px;">
-                                Tambah Materi </h1>
+                                Add Material </h1>
                         </div>
                         <div class="kt-subheader__toolbar">
                             <div class="kt-subheader__wrapper">
                                 <a href="#" class="btn kt-subheader__btn-daterange">
                                     <span class="kt-subheader__btn-daterange-title"
-                                        id="kt_dashboard_daterangepicker_title">Tanggal</span>&nbsp;
+                                        id="kt_dashboard_daterangepicker_title">Date</span>&nbsp;
                                     <span class="kt-subheader__btn-daterange-date"
                                         id="kt_dashboard_daterangepicker_date"><?php echo date('d / M / y'); ?></span>
 
@@ -360,7 +360,7 @@ echo $data['user']['nama_guru'];
                                     <input type="hidden" name="id">
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
-                                            <label for="inputEmail4">Nama Guru</label>
+                                            <label for="inputEmail4">Teacher name</label>
                                             <input required type="text" readonly name="nama_guru" value="<?php
 $data['user'] = $this->db->get_where('guru', ['email' =>
     $this->session->userdata('email')])->row_array();
@@ -369,7 +369,7 @@ echo $data['user']['nama_guru'];?>" class="form-control" id="inputEmail4">
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
-                                            <label for="inputEmail4">Nama Mata Pelajaran</label>
+                                            <label for="inputEmail4">Subject Name</label>
                                             <input required type="text" readonly name="nama_mapel" value="<?php
 $data['user'] = $this->db->get_where('guru', ['email' =>
     $this->session->userdata('email')])->row_array();
@@ -381,26 +381,26 @@ echo $data['user']['nama_mapel'];?>" class="form-control" id="inputEmail4">
                                             <div class="custom-file">
                                                 <input required type="file" name="video" class="custom-file-input"
                                                     id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                                                <label class="custom-file-label" for="inputGroupFile01">Upload Video
-                                                    Materi Disini</label>
+                                                <label class="custom-file-label" for="inputGroupFile01">Upload Material Video Here</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Deskripsi Materi</label>
+                                        <label for="exampleFormControlTextarea1">Material Link</label>
                                         <textarea class="form-control" required name="deskripsi"
-                                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            id="exampleFormControlTextarea1" rows="1"></textarea>
                                     </div>
+
                                     <div class="form-group">
-                                        <label for="inputState">Kelas</label>
+                                        <label for="inputState">Class</label>
                                         <select required id="inputState" name="kelas" class="form-control">
-                                            <option selected>Pilih disini</option>
-                                            <option value="X">X ( Kelas Sepuluh )</option>
-                                            <option value="XI">XI ( Kelas Sebelas )</option>
-                                            <option value="XII">XII ( Kelas Dua Belas )</option>
+                                            <option selected>Choose here</option>
+                                            <option value="X">1 ( First grade )</option>
+                                            <option value="XI">2 ( Second grade )</option>
+                                            <option value="XII">3 ( Third grade )</option>
                                         </select>
                                     </div>
-                                    <button type="submit" class="btn btn-success">Tambah materi</button>
+                                    <button type="submit" class="btn btn-success">Add material</button>
                             </div>
                         </div>
 
@@ -416,11 +416,7 @@ echo $data['user']['nama_mapel'];?>" class="form-control" id="inputEmail4">
                 <!-- begin:: Footer -->
                 <div class="kt-footer kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop">
                     <div class="kt-footer__copyright">
-                        2019&nbsp;&copy;&nbsp;<a href="https://syauqizaidan.github.io/" target="_blank"
-                            class="kt-link">Syaauqi Zaaidan & Descienfy</a>
-                    </div>
-                    <div class="kt-footer__menu">
-                        Made with &nbsp; <span class="" style="color: red"> &#10084;</span> &nbsp; by Syaauqi
+                        2022&nbsp;&copy;&nbsp;  All rights reserved | This template is created by Computer Science and Research Department - Higher Institute of Management of Sousse
                     </div>
                 </div>
 

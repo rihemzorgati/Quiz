@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Data Detail Siswa - Learnify </title>
+    <title>Student Details - Learnify </title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -81,33 +81,33 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <li class="nav-item dropdown ">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Student Management</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Student</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Teacher Management</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Teacher</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Material Management </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Material</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
                                 </li>
                             </ul>
                         </li>
@@ -116,10 +116,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
                                 <span>Developer</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
                                         Learnify</a>
                                 </li>
                             </ul>
@@ -134,12 +133,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Detail Siswa | <?= $detail->nama ?> </h2>
+                                <h2 class="card-title" style="color: black;">Student Details | <?= $detail->nama ?> </h2>
                                 <hr>
-                                <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
-                                </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">I understand and want to continue ⭢</a>
                             </div>
                         </div>
                         <div class="">
@@ -151,20 +147,17 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         </div>
                         <br>
                         <div class="col-md-12 bg-white p-3" id="detail" style="border-radius:3px;box-shadow:rgba(0, 0, 0, 0.03) 0px 4px 8px 0px;">
-                            <h1 class="font-weight-bold card-title text-center" style="color: black;">Detail Siswa </h1>
-                            <p class="text-center" style="line-height: 5px;">Berikut data detail yang terdapat di
-                                database, meliputi Nama, Email,
-                                Photo, Akun aktif
-                                dan Date Created.</p>
+                            <h1 class="font-weight-bold card-title text-center" style="color: black;">Student Details </h1>
+                            <p class="text-center" style="line-height: 5px;">The following are detailed data contained in the database, including Name, Email, Photo, Active Account and Date Created.</p>
                             <hr>
                             <table style="width: 100%" class="container text-center">
                                 <tbody>
                                     <tr style="border-bottom: 0.5px solid #6c757d;">
-                                        <td><span class="font-weight-bold">Nama Siswa :</span></td>
+                                        <td><span class="font-weight-bold">Student's names :</span></td>
                                         <td> <?= $detail->nama ?></td>
                                     </tr>
                                     <tr style="border-bottom: 0.5px solid #6c757d;">
-                                        <td><span class="font-weight-bold">Alamat Email :</span></td>
+                                        <td><span class="font-weight-bold">Email address :</span></td>
                                         <td> <?= $detail->email ?></td>
                                     </tr>
                                     <tr style="border-bottom: 0.5px solid #6c757d;">
@@ -172,18 +165,18 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                         <td>Terenkripsi</td>
                                     </tr>
                                     <tr style="border-bottom: 0.5px solid #6c757d;">
-                                        <td><span class="font-weight-bold">Akun Aktif? :</span></td>
+                                        <td><span class="font-weight-bold">Active Account? :</span></td>
                                         <td><?= $detail->is_active ?></td>
                                     </tr>
                                     <tr style="border-bottom: 0.5px solid #6c757d;">
-                                        <td><span class="font-weight-bold">Terdaftar pada :</span></td>
+                                        <td><span class="font-weight-bold">Registered on :</span></td>
                                         <td><?= $detail->date_created ?></td>
                                     </tr>
                                 </tbody>
                             </table>
                             <p style="font-weight:500px!important;font-size:18px;text-align:justify;" class="text-justify">
                             </p>
-                            <a href="<?= base_url('admin/data_siswa') ?>" class="btn btn-success btn-block">Kembali</a>
+                            <a href="<?= base_url('admin/data_siswa') ?>" class="btn btn-success btn-block">Return</a>
                         </div>
                     </div>
                 </section>
@@ -195,7 +188,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Start Footer -->
     <footer class="main-footer">
         <div class="text-center">
-            Copyright &copy; 2020 <div class="bullet"></div> <a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+            Copyright &copy; 2022 <div class="bullet"></div> <a href="https://github.com/rihemzorgati">Rihem Zorgati</a>
         </div>
     </footer>
     <!-- End Footer -->

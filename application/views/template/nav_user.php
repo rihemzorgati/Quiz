@@ -20,7 +20,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
-    <title>Learnify - Belajar Dimana Saja & Kapan Saja !</title>
+    <title>Learnify - Study Anywhere & Anytime !</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>vendors/linericon/style.css">
@@ -58,13 +58,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hi, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Home</a>
                             </li>
                             <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a>
                             </li>

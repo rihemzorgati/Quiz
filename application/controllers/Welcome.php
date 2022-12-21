@@ -14,11 +14,11 @@ class Welcome extends CI_Controller
     public function validateLogin()
     {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
-            'required' => 'Harap isi bidang email!',
-            'valid_email' => 'Email tidak valid!',
+            'required' => 'Please fill in the email field!',
+            'valid_email' => 'Invalid email!',
         ]);
         $this->form_validation->set_rules('password', 'Password', 'trim|required', [
-            'required' => 'Harap isi bidang password!',
+            'required' => 'Please fill in the password field!',
         ]);
         if ($this->form_validation->run() == false) {
             $this->session->set_flashdata('false-login', true);
@@ -34,7 +34,7 @@ class Welcome extends CI_Controller
     public function logout()
     {
         $this->session->unset_userdata('email');
-        $this->session->set_flashdata('success-logout', 'Berhasil!');
+        $this->session->set_flashdata('success-logout', 'Succeed!');
         redirect(base_url('welcome'));
     }
 
@@ -73,11 +73,11 @@ class Welcome extends CI_Controller
     public function admin()
     {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
-            'required' => 'Harap isi bidang email!',
-            'valid_email' => 'Email tidak valid!',
+            'required' => 'Please fill in the email field!',
+            'valid_email' => 'Invalid email!',
         ]);
         $this->form_validation->set_rules('password', 'Password', 'trim|required', [
-            'required' => 'Harap isi bidang password!',
+            'required' => 'Please fill in the password field!',
         ]);
         if ($this->form_validation->run() == false) {
             $this->load->view('admin/login');
@@ -176,11 +176,11 @@ class Welcome extends CI_Controller
     public function guru()
     {
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', [
-            'required' => 'Harap isi bidang email!',
-            'valid_email' => 'Email tidak valid!',
+            'required' => 'Please fill in the email field!',
+            'valid_email' => 'Invalid email!',
         ]);
         $this->form_validation->set_rules('password', 'Password', 'trim|required', [
-            'required' => 'Harap isi bidang password!',
+            'required' => 'Please fill in the password field!',
         ]);
         if ($this->form_validation->run() == false) {
             $this->load->view('guru/login');

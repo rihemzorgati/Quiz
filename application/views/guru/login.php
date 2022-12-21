@@ -42,49 +42,37 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
                     <div class="p-4 m-3">
                         <a href="<?= base_url('welcome') ?>"> <img src="<?= base_url('assets/') ?>/img/logo.png" alt="logo" width="150" class=" mb-5 mt-2"></a>
-                        <h4 class="text-dark font-weight-normal">Selamat datang di <span class="font-weight-bold">Learnify</span>
-                        </h4>
-                        <p class="text-muted">Sebelum masuk ke halaman guru, anda harus login terlebih dahulu sebagai
-                            guru. silahkan isi data dibawah untuk melanjutkan.</p>
+                        <h2 class="modal-title text-dark font-weight-bold" style="color:#212529 !important;" id="exampleModalCenterTitle"> Learnify - Sign in now</h2>
                         <form method="post" action="<?= base_url('welcome/guru') ?>" class="needs-validation" novalidate="">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
-                                <div class="invalid-feedback">
-                                    Harap isi bidang email
-                                </div>
+                                <label class="label-font" for="
+                                exampleFormControlInput1">
+                                Email</label>
+                                <input type="text" value="<?= set_value('email'); ?>" class="form-control" name="email" autocomplete="off" id="email" placeholder="Enter your email here ..">
+                                <small class="text-danger"></small>
                             </div>
                             <div class="form-group">
-                                <div class="d-block">
-                                    <label for="password" class="control-label">Password</label>
-                                </div>
-                                <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                                <div class="invalid-feedback">
-                                    Harap isi bidang password
-                                </div>
+                                <label class="label-font" for="
+                                    exampleFormControlInput1">
+                                    Password</label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password here ..">
+                                <small class="text-danger"></small>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Remember me.
+                                </label>
                             </div>
                             <br>
                             <div class="form-group text-right">
-                                <button type="submit" class="btn btn-block btn-success btn-lg btn-icon icon-right" tabindex="4">
-                                    Masuk
-                                </button>
+                            <button class="btn btn-block font-weight-bold" style="background-color: #4dbf1c;color:white;font-size:18px;">Login
+                                    now!</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="<?= base_url('assets/') ?>stisla-assets/img/unsplash/ss.jpg">
-                    <div class="absolute-bottom-left index-2">
-                        <div class="text-light p-5 pb-2">
-                            <div class="mb-5 pb-3">
-                                <h1 class="mb-2 display-4 font-weight-bold text-white">Selamat datang, Guru!</h1>
-                                <h5 class="font-weight-normal text-muted-transparent text-white">Silahkan login untuk
-                                    masuk ke
-                                    halaman guru.</h5>
-                            </div>
-                            Made with <span class="text-danger"> &#10084;</span> by <a class="text-light bb" target="_blank" href="https://syauqizaidan.github.io/">Syaauqi Zaaidan</a> - Image by <a class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </div>
@@ -95,8 +83,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Kamu berhasil daftar!',
-                text: 'Silahkan Cek Email Kamu, Buat Verifikasi!',
+                title: 'You successfully registered!',
+                text: 'Please check your email, make verification!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -108,8 +96,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Kamu berhasil daftar!',
-                text: 'Sekarang login yuk!',
+                title: 'You successfully registered!',
+                text: 'Login now!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -121,8 +109,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Email Telah Diverifikasi!',
-                text: 'Sekarang login yuk!',
+                title: 'Email has been verified!',
+                text: 'Login now!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -134,8 +122,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Kamu berhasil logout!',
-                text: 'Selamat tinggal, Sampai jumpa lagi!',
+                title: 'You have successfully logged out!',
+                text: 'Goodbye, see you later!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -147,8 +135,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'error',
-                title: 'Gagal login!',
-                text: 'Silahkan Periksa Kembali Email dan Password Kamu!',
+                title: 'Failed login!',
+                text: 'Please check your email and password again!',
                 showConfirmButton: false,
                 timer: 2500
             });
@@ -160,8 +148,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'error',
-                title: 'Email Belum Diverifikasi!',
-                text: 'Silahkan Cek Email Kamu Dahulu!',
+                title: 'Email not verified!',
+                text: 'Please check your email first!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -173,8 +161,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'error',
-                title: 'Password Salah!',
-                text: 'Silahkan Periksa Kembali Password Kamu!',
+                title: 'Password wrong!',
+                text: 'Please check your password again!',
                 showConfirmButton: false,
                 timer: 2500
             });
@@ -186,8 +174,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <script>
             Swal.fire({
                 icon: 'error',
-                title: 'Harap Login Terlebih Dahulu !',
-                text: 'Silahkan Login Dahulu !',
+                title: 'Please login first!',
+                text: 'Please login first!',
                 showConfirmButton: false,
                 timer: 2500
             });

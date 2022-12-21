@@ -45,11 +45,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="p-4 m-3">
                         <a href="<?=base_url('welcome')?>"> <img src="<?=base_url('assets/')?>/img/logo.png" alt="logo"
                                 width="150" class=" mb-5 mt-2"></a>
-                        <h4 class="text-dark font-weight-normal">Selamat datang di <span
+                        <h4 class="text-dark font-weight-normal">Welcome to <span
                                 class="font-weight-bold">Learnify</span>
                         </h4>
-                        <p class="text-muted">Sebelum masuk ke halaman admin, anda harus login terlebih dahulu sebagai
-                            admin. silahkan isi data dibawah untuk melanjutkan.</p>
+                        <p class="text-muted">Before entering the admin page, you must first log in as an admin. Please fill in the data below to continue.</p>
                         <form method="post" action="<?=base_url('welcome/admin')?>" class="needs-validation"
                             novalidate="">
                             <div class="form-group">
@@ -57,7 +56,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <input id="email" type="email" class="form-control" name="email" tabindex="1" required
                                     autofocus>
                                 <div class="invalid-feedback">
-                                    Harap isi bidang email
+                                Please fill in the email field
                                 </div>
                             </div>
                             <div class="form-group">
@@ -67,14 +66,14 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <input id="password" type="password" class="form-control" name="password" tabindex="2"
                                     required>
                                 <div class="invalid-feedback">
-                                    Harap isi bidang password
+                                Please fill in the password field
                                 </div>
                             </div>
                             <br>
                             <div class="form-group text-right">
                                 <button type="submit" class="btn btn-block btn-success btn-lg btn-icon icon-right"
                                     tabindex="4">
-                                    Masuk
+                                    Enter
                                 </button>
                             </div>
                         </form>
@@ -85,13 +84,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="absolute-bottom-left index-2">
                         <div class="text-light p-5 pb-2">
                             <div class="mb-5 pb-3">
-                                <h1 class="mb-2 display-4 font-weight-bold text-white">Selamat datang!</h1>
-                                <h5 class="font-weight-normal text-muted-transparent text-white">Silahkan login untuk
-                                    masuk ke
-                                    halaman admin.</h5>
+                                <h1 class="mb-2 display-4 font-weight-bold text-white">Welcome!</h1>
+                                <h5 class="font-weight-normal text-muted-transparent text-white">Please login to enter the admin page.</h5>
                             </div>
-                            Made with <span class="text-danger"> &#10084;</span> by <a class="text-light bb"
-                                target="_blank" href="https://syauqizaidan.github.io/">Syaauqi Zaaidan</a> - Image by <a
+                             - Image by <a
                                 class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
                         </div>
                     </div>
@@ -107,8 +103,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'success',
-        title: 'Kamu berhasil daftar!',
-        text: 'Silahkan Cek Email Kamu, Buat Verifikasi!',
+        title: 'You have successfully registered!',
+        text: 'Please Check Your Email, Make Verification!',
         showConfirmButton: false,
         timer: 2500
     })
@@ -119,8 +115,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'success',
-        title: 'Kamu berhasil daftar!',
-        text: 'Sekarang login yuk!',
+        title: 'You have successfully registered!',
+        text: 'Login now!',
         showConfirmButton: false,
         timer: 2500
     })
@@ -131,8 +127,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'success',
-        title: 'Email Telah Diverifikasi!',
-        text: 'Sekarang login yuk!',
+        title: 'Email Has Been Verified!',
+        text: 'Login now!',
         showConfirmButton: false,
         timer: 2500
     })
@@ -143,8 +139,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'success',
-        title: 'Kamu berhasil logout!',
-        text: 'Selamat tinggal, Sampai jumpa lagi!',
+        title: 'You have successfully logged out!',
+        text: 'Goodbye, see you later!',
         showConfirmButton: false,
         timer: 2500
     })
@@ -155,8 +151,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'error',
-        title: 'Gagal login!',
-        text: 'Silahkan Periksa Kembali Email dan Password Kamu!',
+        title: 'Login failed!',
+        text: 'Please Double Check Your Email and Password!',
         showConfirmButton: false,
         timer: 2500
     });
@@ -167,8 +163,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'error',
-        title: 'Email Belum Diverifikasi!',
-        text: 'Silahkan Cek Email Kamu Dahulu!',
+        title: 'Email Not Verified!',
+        text: 'Please Check Your Email First!',
         showConfirmButton: false,
         timer: 2500
     })
@@ -179,8 +175,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'error',
-        title: 'Password Salah!',
-        text: 'Silahkan Periksa Kembali Password Kamu!',
+        title: 'Password wrong!',
+        text: 'Please Check Your Password Again!',
         showConfirmButton: false,
         timer: 2500
     });
@@ -191,8 +187,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
     Swal.fire({
         icon: 'error',
-        title: 'Harap Login Terlebih Dahulu !',
-        text: 'Silahkan Login Dahulu !',
+        title: 'Please Login First!',
+        text: 'Please Login First!',
         showConfirmButton: false,
         timer: 2500
     });

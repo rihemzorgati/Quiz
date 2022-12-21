@@ -57,21 +57,21 @@ class User extends CI_Controller
     public function registration_act()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim|min_length[4]', [
-            'required' => 'Harap isi kolom username.',
-            'min_length' => 'Nama terlalu pendek.',
+            'required' => 'Please fill in the username field.',
+            'min_length' => 'Name is too short.',
         ]);
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[siswa.email]', [
-            'is_unique' => 'Email ini telah digunakan!',
-            'required' => 'Harap isi kolom email.',
-            'valid_email' => 'Masukan email yang valid.',
+            'is_unique' => 'This email has been used!',
+            'required' => 'Please fill in the email field.',
+            'valid_email' => 'Enter a vaild email.',
         ]);
         $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[6]|matches[retype_password]', [
-            'required' => 'Harap isi kolom Password.',
-            'matches' => 'Password tidak sama!',
-            'min_length' => 'Password terlalu pendek',
+            'required' => 'Please fill in the password field.',
+            'matches' => 'Passwords are not the same!',
+            'min_length' => 'Password is too short.',
         ]);
         $this->form_validation->set_rules('retype_password', 'Password', 'required|trim|matches[password]', [
-            'matches' => 'Password tidak sama!',
+            'matches' => 'Passwords are not the same!',
         ]);
 
         if ($this->form_validation->run() == false) {
@@ -86,7 +86,7 @@ class User extends CI_Controller
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
                 'is_active' => 1,
-                'date_created' => time(),
+                'date_created' => date('Y-m-d'),
             ];
 
             //siapkan token
@@ -113,8 +113,8 @@ class User extends CI_Controller
         $config = [
             'protocol' => 'smtp',
             'smtp_host' => 'ssl://smtp.googlemail.com',
-            'smtp_user' => 'ini email disini',
-            'smtp_pass' => 'Isi Password gmail disini',
+            'smtp_user' => 'Enter email here',
+            'smtp_pass' => 'Enter gmail password here',
             'smtp_port' => 465,
             'mailtype' => 'html',
             'charset' => 'utf-8',

@@ -18,48 +18,48 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="row">
             <div class="col-lg-2  col-md-6 col-sm-6">
                 <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Tentang Kami</h6>
+                    <h6 class="footer_title">About Us</h6>
                     <ul class="list">
-                        <li><a href="<?= base_url('welcome/tentang') ?>">Tentang Learnify</a></li>
-                        <li><a href="<?= base_url('welcome/materi') ?>">Materi Learnify</a></li>
-                        <li><a href="<?= base_url('welcome/kontak') ?>">Kontak Learnify</a></li>
-                        <li><a href="http://smkn1ciamis.id/">Website Resmi Sekolah</a></li>
+                        <li><a href="<?= base_url('welcome/tentang') ?>">About Learnify</a></li>
+                        <li><a href="<?= base_url('welcome/materi') ?>">Theory Learnify</a></li>
+                        <li><a href="<?= base_url('welcome/kontak') ?>">Contact Learnify</a></li>
+                        <li><a href="https://isgs.rnu.tn/">School Official Website</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
                 <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Masuk - Sign in</h6>
+                    <h6 class="footer_title">Sign in</h6>
                     <ul class="list">
-                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Untuk Siswa</a></li>
-                        <li><a href="<?= base_url('welcome/guru') ?>">Untuk Guru</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">For Students</a></li>
+                        <li><a href="<?= base_url('welcome/guru') ?>">For Teacher</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
                 <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Pelajaran - Materi</h6>
+                    <h6 class="footer_title">Lessons - Theory</h6>
                     <ul class="list">
-                        <li><a href="javaScript:void(0);">IPA</a></li>
-                        <li><a href="javaScript:void(0);">Matematika</a></li>
-                        <li><a href="javaScript:void(0);">Bahasa Inggris</a></li>
-                        <li><a href="javaScript:void(0);">Bahasa Indonesia</a></li>
-                        <li><a href="javaScript:void(0);">Pendidikan Agama Islam</a></li>
+                        <li><a href="#" data-target="#exampleModalCenter" data-toggle="modal">Computer Science</a></li>
+                        <li><a href="#" data-target="#exampleModalCenter" data-toggle="modal">Mathematics</a></li>
+                        <li><a href="#" data-target="#exampleModalCenter" data-toggle="modal">English</a></li>
+                        <li><a href="#" data-target="#exampleModalCenter" data-toggle="modal">French</a></li>
+                        <li><a href="#" data-target="#exampleModalCenter" data-toggle="modal">Economy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2  col-md-6 col-sm-6">
                 <div class="single-footer-widget tp_widgets">
-                    <h6 class="footer_title">Tentang Developer</h6>
+                    <h6 class="footer_title">About Developer</h6>
                     <ul class="list">
                         <li>Perfectionist Web Developer with one years of experience as a Web Developer and Web Designer. Skilled at Designing and developing Websites. Excellent written and oral communication skills; capable of explaining complex software issues in easy-to-understand terms.</li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <h4 class="footer_title">Tentang Learnify</h4>
+                <h4 class="footer_title">About Learnify</h4>
                 <p>
-                    Web Edukasi Open Source yang dibuat oleh Syauqi Zaidan Khairan Khalaf. Learnify adalah Web edukasi yang dilengkapi video, materi dan sistem ujian yang tersedia secara gratis. Learnify dibuat ditujukan agar para siswa dan guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
+                Open Source Educational Web created by Computer Science and Research Department. Learnify is an educational Web with videos, materials and exam systems available for free. Learnify was created so that students and teachers can continue to learn and teach anywhere and anytime.
                 </p>
             </div>
         </div>
@@ -68,17 +68,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <span class="text-danger"> &#10084;</span> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a> <br> Learnify is made with <span class="text-danger"> &#10084;</span> by <a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf </a> with MIT License
+                </script> All rights reserved | This template is created by Computer Science and Research Department 
+                <br> - Higher Institute of Management of Sousse
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             <div class="col-lg-4 col-md-4 footer-social">
-                <a href="https://www.facebook.com/syaaauqi"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/syaaauqi"><i class="fa fa-twitter"></i></a>
-                <a href="https://dribbble.com/syaufy"><i class="fa fa-dribbble"></i></a>
-                <a href="https://www.behance.net/syaufy"><i class="fa fa-behance"></i></a>
-                <a href="https://www.github.com/syauqi"><i class="fa fa-github"></i></a>
-                <a href="https://www.instagram.com/syaufy"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/ISGSOUSSE.TN"><i class="fa fa-facebook"></i></a>
+                <a href="https://isg.rnu.tn/"><i class="fa fa-dribbble"></i></a>
             </div>
         </div>
     </div>
@@ -92,12 +88,12 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title text-dark font-weight-bold" style="color:#212529 !important;" id="exampleModalCenterTitle">
-                    Learnify - Masuk Sekarang</h2>
+                    Learnify - Sign in now</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
-            <div class="modal-body">
+            </div> 
+            <div class="modal-body" id="new_x">
                 <div class="container-fluid">
                     <br>
                     <div class="row">
@@ -110,31 +106,30 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                     <label class="label-font" for="
                                         exampleFormControlInput1">
                                         Email</label>
-                                    <input type="text" value="<?= set_value('email'); ?>" class="form-control" name="email" autocomplete="off" id="email" placeholder="Masukan email mu disini ..">
+                                    <input type="text" value="<?= set_value('email'); ?>" class="form-control" name="email" autocomplete="off" id="email" placeholder="Enter your email here ..">
                                     <small class="text-danger"></small>
                                 </div>
                                 <div class="form-group">
                                     <label class="label-font" for="
                                         exampleFormControlInput1">
                                         Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukan password mu disini ..">
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password here ..">
                                     <small class="text-danger"></small>
                                 </div>
                                 <div class="form-check mt-2">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                     <label class="form-check-label" for="defaultCheck1">
-                                        Ingat saya.
+                                        Remember me.
                                     </label>
                                 </div>
-                                <p class="terms">Dengan login anda
-                                    menyetujui
-                                    <i>privasi dan persyaratan ketentuan
-                                        hukum kami </i> .
-                                    belum punya akun? daftar <a href=" <?= base_url('user/registration') ?>">
-                                        disini.</a>
+                                <p class="terms">By logging in you agree 
+                                    <iu>our privacy and legal terms. </i>
+                                    Don't have an account yet? Register <a href=" <?= base_url('user/registration') ?>">
+                                        here.</a>
                                 </p>
                                 <button class="btn btn-block font-weight-bold" style="background-color: #4dbf1c;color:white;font-size:18px;">Login
-                                    Sekarang!</button>
+                                    now!</button>
+
                             </form>
                         </div>
                     </div>
@@ -146,13 +141,15 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 <!-- End Login Modal -->
 
 
+
+
 <!-- Sweetaler Flashdata -->
 <?php if ($this->session->flashdata('success-reg')) : ?>
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil daftar!',
-            text: 'Sekarang kamu boleh login!',
+            title: 'You have successfully registered!',
+            text: 'Now you can login!',
             showConfirmButton: false,
             timer: 2500
         })
@@ -164,8 +161,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil daftar!',
-            text: 'Sekarang login yuk!',
+            title: 'You have successfully registered!',
+            text: 'Login now!',
             showConfirmButton: false,
             timer: 2500
         })
@@ -177,8 +174,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Email Telah Diverifikasi!',
-            text: 'Sekarang login yuk!',
+            title: 'Email has been verified!',
+            text: 'Login now!',
             showConfirmButton: false,
             timer: 2500
         })
@@ -190,8 +187,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Kamu berhasil logout!',
-            text: 'Selamat tinggal, Sampai jumpa lagi!',
+            title: 'You have successfully logged out!',
+            text: 'Goodbye, see you later!',
             showConfirmButton: false,
             timer: 2500
         })
@@ -203,8 +200,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Gagal login!',
-            text: 'Silahkan Periksa Kembali Email dan Password Kamu!',
+            title: 'Login failed!',
+            text: 'Please double check your email and password!',
             showConfirmButton: false,
             timer: 2500
         });
@@ -216,8 +213,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Email Belum Diverifikasi!',
-            text: 'Silahkan Cek Email Kamu Dahulu!',
+            title: 'Email not verified!',
+            text: 'Please check your email first!',
             showConfirmButton: false,
             timer: 2500
         })
@@ -229,8 +226,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Password Salah!',
-            text: 'Silahkan Periksa Kembali Password Kamu!',
+            title: 'Password wrong!',
+            text: 'Please check your password again!',
             showConfirmButton: false,
             timer: 2500
         });
@@ -242,8 +239,8 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <script>
         Swal.fire({
             icon: 'error',
-            title: 'Harap Login Terlebih Dahulu !',
-            text: 'Silahkan Login Dahulu !',
+            title: 'Please login first!',
+            text: 'Please login first!',
             showConfirmButton: false,
             timer: 2500
         });
@@ -255,6 +252,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         $("#exampleModalCenter").modal("show")
     </script>
 <?php endif; ?>
+
+
+
+
 
 <script src="<?= base_url('assets/') ?>js/stellar.js"></script>
 <script src="<?= base_url('assets/') ?>vendors/lightbox/simpleLightbox.min.js"></script>

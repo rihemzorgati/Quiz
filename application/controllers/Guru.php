@@ -24,8 +24,8 @@ class Guru extends CI_Controller
     public function add_materi()
     {
         $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|trim|min_length[1]', [
-            'required' => 'Harap isi kolom deskripsi.',
-            'min_length' => 'deskripsi terlalu pendek.',
+            'required' => 'Please fill in the description column.',
+            'min_length' => 'Description too short.',
         ]);
         if ($this->form_validation->run() == false) {
             $this->load->view('guru/add_materi');

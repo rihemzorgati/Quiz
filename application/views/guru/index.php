@@ -181,18 +181,18 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 data-ktmenu-submenu-toggle="click"><a href="javascript:;"
                                     class="kt-menu__link kt-menu__toggle"><i
                                         class="kt-menu__link-icon flaticon2-calendar-5"></i><span
-                                        class="kt-menu__link-text">Tambah</span><i
+                                        class="kt-menu__link-text">Plus</span><i
                                         class="kt-menu__ver-arrow la la-angle-right"></i></a>
                                 <div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
                                     <ul class="kt-menu__subnav">
                                         <li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span
                                                 class="kt-menu__link"><span
-                                                    class="kt-menu__link-text">Tambah</span></span>
+                                                    class="kt-menu__link-text">Plus</span></span>
                                         </li>
                                         <li class="kt-menu__item " aria-haspopup="true"><a
                                                 href="<?=base_url('guru/add_materi')?>" class="kt-menu__link "><i
                                                     class="kt-menu__link-icon la la-commenting"></i><span
-                                                    class="kt-menu__link-text">Materi</span></a></li>
+                                                    class="kt-menu__link-text">Materials</span></a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -222,14 +222,14 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel"
                                     data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;"
                                         class="kt-menu__link kt-menu__toggle"><span
-                                            class="kt-menu__link-text">Materi</span><i
+                                            class="kt-menu__link-text">Materials</span><i
                                             class="kt-menu__hor-arrow la la-angle-down"></i></a>
                                     <div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
                                         <ul class="kt-menu__subnav">
                                             <li class="kt-menu__item " aria-haspopup="true"><a
                                                     href="<?=base_url('guru/add_materi')?>" class="kt-menu__link "><i
                                                         class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span
-                                                        class="kt-menu__link-text">Tambah Materi</span></a></li>
+                                                        class="kt-menu__link-text">Add Material</span></a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -265,7 +265,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                             class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
                                     </div>
                                     <div class="kt-user-card__name font-weight-bold">
-                                        Hai!, &nbsp;<?php
+                                        Hi!, &nbsp;<?php
 $data['user'] = $this->db->get_where('guru', ['email' =>
     $this->session->userdata('email')])->row_array();
 echo $data['user']['nama_guru'];
@@ -283,10 +283,10 @@ echo $data['user']['nama_guru'];
                                         </div>
                                         <div class="kt-notification__item-details">
                                             <div class="kt-notification__item-title kt-font-bold">
-                                                Tambah data materi
+                                                Add material data
                                             </div>
                                             <div class="kt-notification__item-time">
-                                                Tambah Materi Learnify
+                                                Add Learnify Material
                                             </div>
                                         </div>
                                     </a>
@@ -320,7 +320,7 @@ echo $data['user']['nama_guru'];
                             <div class="kt-subheader__wrapper">
                                 <a href="#" class="btn kt-subheader__btn-daterange">
                                     <span class="kt-subheader__btn-daterange-title"
-                                        id="kt_dashboard_daterangepicker_title">Tanggal</span>&nbsp;
+                                        id="kt_dashboard_daterangepicker_title">Date</span>&nbsp;
                                     <span class="kt-subheader__btn-daterange-date"
                                         id="kt_dashboard_daterangepicker_date"><?php echo date('d / M / y'); ?></span>
 
@@ -364,7 +364,7 @@ echo $data['user']['nama_guru'];
                                                 srcset="">
                                             <h1 class="kt-widget19__title kt-font-light display-4 font-weight-bold"
                                                 style="letter-spacing: -1px;">
-                                                Selamat Datang, <?php
+                                                Welcome, <?php
 $data['user'] = $this->db->get_where('guru', ['email' =>
     $this->session->userdata('email')])->row_array();
 echo $data['user']['nama_guru'];
@@ -393,17 +393,13 @@ echo $data['user']['nama_guru'];
                                                 </div>
                                             </div>
                                             <div class="kt-widget19__text">
-                                                Selamat datang di halaman guru Learnify, anda dapat menambah materi .
-                                                Dalam materi anda dapat memasukan video, dan deskripsi nya. Seemoga anda
-                                                dapat menikmati Learnify!, kontak Administrator jika terjadi masalah
-                                                apapun yang terkait upload materi. Terima kasih telah menggunakan
-                                                learnify!
+                                            Welcome to the Learnify teacher page, you can add material. In the material you can include a video, and a description. Hope you enjoy Learnify!, contact the Administrator in case of any issues related to uploading materials. Thanks for using learnify!
                                                 <br>
-                                                Selamat Bekerja :)
+                                                Enjoy your work :)
                                             </div>
                                         </div>
                                         <div class="kt-widget19__action">
-                                            <a href="#" class="btn btn-sm btn-label-brand btn-bold">Tambah Materi</a>
+                                            <a href="#" class="btn btn-sm btn-label-brand btn-bold">Add Material</a>
                                         </div>
                                     </div>
                                 </div>
@@ -420,11 +416,7 @@ echo $data['user']['nama_guru'];
                         <!-- begin:: Footer -->
                         <div class="kt-footer kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop">
                             <div class="kt-footer__copyright">
-                                2020&nbsp;&copy;&nbsp;<a href="https://syauqizaidan.github.io/" target="_blank"
-                                    class="kt-link">Syaauqi Zaaidan & Descienfy</a>
-                            </div>
-                            <div class="kt-footer__menu">
-                                Made with &nbsp; <span class="" style="color: red"> &#10084;</span> &nbsp; by Syaauqi
+                                2022&nbsp;&copy;&nbsp; All rights reserved | This template is created by Computer Science and Research Department - Higher Institute of Management of Sousse
                             </div>
                         </div>
 
@@ -885,8 +877,8 @@ echo $data['user']['nama_guru'];
             <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Materi Telah Ditambahkan!',
-                text: 'Selamat data ditambah!',
+                title: 'Material Has Been Added!',
+                text: 'Happy data added!',
                 showConfirmButton: false,
                 timer: 2500
             })
@@ -896,8 +888,8 @@ echo $data['user']['nama_guru'];
             <script>
             Swal.fire({
                 icon: 'success',
-                title: 'Data Siswa Telah Dihapus!',
-                text: 'Selamat data telah Dihapus!',
+                title: 'Student Data Has Been Deleted!',
+                text: 'Congratulations data has been deleted!',
                 showConfirmButton: false,
                 timer: 2500
             })

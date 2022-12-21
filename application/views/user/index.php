@@ -19,9 +19,10 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <!-- Title -->
-    <title>Selamat datang - <?php
+    <title>Welcome - <?php
                             $data['user'] = $this->db->get_where('siswa', ['email' =>
                             $this->session->userdata('email')])->row_array();
                             echo $data['user']['nama'];
@@ -66,13 +67,13 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hai, <?php
+                            <li class="nav-item "><a class="nav-link" href="javascript:void(0)">Hi, <?php
                                                                                                         $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                         $this->session->userdata('email')])->row_array();
                                                                                                         echo $data['user']['nama'];
                                                                                                         ?></a>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Beranda</a>
+                            <li class="nav-item active"><a class="nav-link" href="<?= base_url('user') ?>">Home</a>
                             </li>
                             <li class=" nav-item "><a class=" nav-link text-danger" href="<?= base_url('welcome/logout') ?>">Log Out</a>
                             </li>
@@ -90,21 +91,17 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
         <div class="bg-white mx-auto p-4 buat-text" data-aos="fade-down" data-aos-duration="1400" style="width: 100%; border-radius:10px;">
             <div class="row" style="color: black; font-family: 'poppins';">
                 <div class="col-md-12 mt-1">
-                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Selamat Datang
-                        di Learnify <span style="font-size: 40px;">👋🏻
+                    <h1 class="display-4" style="color: black; font-family:'poppins';" data-aos="fade-down" data-aos-duration="1400">Welcome
+                        To Learnify <span style="font-size: 40px;">👋🏻
                         </span> </h1>
-                    <p>Hello Students! , Ini merupakan halaman utama learnify ! Silahkan pilih kelas yang akan kamu
-                        akses
-                        dan pilih mata pelajaran yang ingin kamu pelajari. Selamat belajar ya students!</p>
+                    <p>Hello Students! This is the main Learnify page! Please select the class you want to access and select the subject you want to study. Happy learning Students! </p>
                     <hr>
                     <h4 style="line-height: 4px;" data-aos="fade-down" data-aos-duration="1700"><?php
                                                                                                 $data['user'] = $this->db->get_where('siswa', ['email' =>
                                                                                                 $this->session->userdata('email')])->row_array();
                                                                                                 echo $data['user']['nama'];
                                                                                                 ?> - Learnify Students</h3>
-                        <p data-aos="fade-down" data-aos-duration="1800">Silahkan pilih kelas yang akan kamu akses
-                            dibawah
-                            ini!
+                        <p data-aos="fade-down" data-aos-duration="1800">Please select the class you want to access below!
                         </p>
                 </div>
             </div>
@@ -124,21 +121,21 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="col-sm-4 mb-2 d-flex justify-content-center " data-aos-duration="1900" data-aos="fade-right">
                         <a href="<?= base_url('user/kelas10') ?>">
                             <div class="card-kelas text-center">
-                                <img src="<?= base_url('assets/') ?>img/kelas10.png" style="object-fit: cover;" class="card-img-top img-fluid" alt="...">
+                                <img src="<?= base_url('assets/') ?>img/k1.png" style="object-fit: cover;" class="card-img-top img-fluid" alt="...">
                             </div>
                         </a>
                     </div>
                     <div class="col-sm-4 mb-2 d-flex justify-content-center " data-aos-duration="1900" data-aos="fade-down">
                         <a href="<?= base_url('user/kelas11') ?>">
                             <div class="card-kelas">
-                                <img src="<?= base_url('assets/') ?>img/kelas11.png" class="card-img-top" alt="...">
+                                <img src="<?= base_url('assets/') ?>img/k2.png" class="card-img-top" alt="...">
                             </div>
                         </a>
                     </div>
                     <div class="col-sm-4 mb-2 d-flex justify-content-center" data-aos-duration="1900" data-aos="fade-left">
                         <a href="<?= base_url('user/kelas12') ?>">
                             <div class="card-kelas">
-                                <img src="<?= base_url('assets/') ?>img/kelas12.png" class="card-img-top" alt="...">
+                                <img src="<?= base_url('assets/') ?>img/k3.png" class="card-img-top" alt="...">
                             </div>
                         </a>
                     </div>

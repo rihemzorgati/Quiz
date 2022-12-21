@@ -213,28 +213,28 @@ class Admin extends CI_Controller
     public function add_guru()
     {
         $this->form_validation->set_rules('nip', 'Nip', 'required|trim|min_length[4]', [
-            'required' => 'Harap isi kolom NIP.',
-            'min_length' => 'NIP terlalu pendek.',
+            'required' => 'Please fill in the CIN field.',
+            'min_length' => 'CIN too short.',
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[guru.email]', [
-            'is_unique' => 'Email ini telah digunakan!',
-            'required' => 'Harap isi kolom email.',
-            'valid_email' => 'Masukan email yang valid.',
+            'is_unique' => 'Email has been used!',
+            'required' => 'Please fill in the email field.',
+            'valid_email' => 'Enter a valid email.',
         ]);
 
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim|min_length[4]', [
-            'required' => 'Harap isi kolom nAMA.',
-            'min_length' => 'Nama terlalu pendek.',
+            'required' => 'Please fill in the name field.',
+            'min_length' => 'Name too short.',
         ]);
 
         $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[6]|matches[password2]', [
-            'required' => 'Harap isi kolom Password.',
-            'matches' => 'Password tidak sama!',
-            'min_length' => 'Password terlalu pendek',
+            'required' => 'Please fill in the password field.',
+            'matches' => 'Passwords are not the same!',
+            'min_length' => 'Password too short',
         ]);
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password]', [
-            'matches' => 'Password tidak sama!',
+            'matches' => 'Passwords are not the same!',
         ]);
 
         if ($this->form_validation->run() == false) {
@@ -280,8 +280,8 @@ class Admin extends CI_Controller
     public function tambah_materi()
     {
         $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|trim|min_length[1]', [
-            'required' => 'Harap isi kolom deskripsi.',
-            'min_length' => 'deskripsi terlalu pendek.',
+            'required' => 'Please fill in the description field.',
+            'min_length' => 'Description too short.',
         ]);
         if ($this->form_validation->run() == false) {
             $this->load->view('admin/add_materi');

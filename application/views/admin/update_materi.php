@@ -18,7 +18,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Update Data Guru - Learnify</title>
+    <title>Teacher Data Update - Learnify</title>
     <!-- General CSS Files -->
     <link rel="icon" href="<?= base_url('assets/') ?>img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -80,33 +80,33 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                         <li class="nav-item dropdown ">
                             <a href="<?= base_url('admin') ?>" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                         </li>
-                        <li class="menu-header">Management Siswa</li>
+                        <li class="menu-header">Student Management</li>
                         <li class="nav-item dropdown ">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i>
-                                <span>Siswa</span></a>
+                                <span>Student</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Data Siswa</a></li>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_siswa') ?>">Student Data</a></li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Guru</li>
+                        <li class="menu-header">Teacher Management</li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chalkboard-teacher"></i>
-                                <span>Guru</span></a>
+                                <span>Teacher</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_guru') ?>">Teacher Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Tambah Data Guru</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/add_guru') ?>">Add Teacher Data</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-header">Management Materi</li>
+                        <li class="menu-header">Material Management</li>
                         <li class="nav-item dropdown active">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-book"></i>
-                                <span>Materi</span></a>
+                                <span>Material</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Data Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/data_materi') ?>">Material Data</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Tambah Materi</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/tambah_materi') ?>">Add Material</a>
                                 </li>
                             </ul>
                         </li>
@@ -115,10 +115,9 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-address-card"></i>
                                 <span>Developer</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">Tentang
-                                        Pembuat</a>
+                                <li><a class="nav-link" href="<?= base_url('admin/about_developer') ?>">About Maker</a>
                                 </li>
-                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">Tentang
+                                <li><a class="nav-link" href="<?= base_url('admin/about_learnify') ?>">About
                                         Learnify</a>
                                 </li>
                             </ul>
@@ -133,21 +132,17 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                     <div class="">
                         <div class="card" style="width:100%;">
                             <div class="card-body">
-                                <h2 class="card-title" style="color: black;">Update Data Materi</h2>
+                                <h2 class="card-title" style="color: black;">Material Data Update</h2>
                                 <hr>
-                                <p class="card-text"> After I ran into Helen at a restaurant, I realized she was just office pretty drop-dead date put in in a deck for our standup today. Who's responsible for the ask for this request? who's responsible for the ask for this request? but moving the goalposts gain traction.
-                                </p>
-                                <a href="#detail" class="btn btn-success">Saya paham dan
-                                    ingin melanjutkan ⭢</a>
+                                <a href="#detail" class="btn btn-success">I understand and want to continue ⭢</a>
                             </div>
                         </div>
                     </div>
                     <div class="card card-success">
                         <div class="col-md-12 text-center">
                             <p class="registration-title font-weight-bold display-4 mt-4" style="color:black; font-size: 50px;">
-                                Update Data Materi</p>
-                            <p style="line-height:-30px;margin-top:-20px;">Silahkan isi data data yang diperlukan
-                                dibawah </p>
+                            Material Data Update</p>
+                            <p style="line-height:-30px;margin-top:-20px;">Please fill in the required data below </p>
                             <hr>
                         </div>
                         <?php foreach ($user as $u) { ?>
@@ -155,21 +150,21 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
                                 <form method="POST" action="<?= base_url('admin/materi_edit') ?>">
                                     <input type="hidden" name="id" value="<?= $u->id ?>">
                                     <div class="form-group">
-                                        <label for="nip">Nama Guru</label>
+                                        <label for="nip">Teacher name</label>
                                         <input readonly id="nama_guru" type="text" class="form-control" value="<?= $u->nama_guru ?>" name="nama_guru">
                                         <?= form_error('nama_guru', '<small class="text-danger">', '</small>'); ?>
                                         <div class="invalid-feedback">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="nama_mapel">Mata Pelajaran</label>
+                                        <label for="nama_mapel">Subjects</label>
                                         <input readonly id="nama_mapel" type="text" value="<?= $u->nama_mapel ?>" class="form-control" name="nama_mapel">
                                         <?= form_error('email', '<small class="text-danger">', '</small>'); ?>
                                         <div class="invalid-feedback">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Deskripsi Materi</label>
+                                        <label for="exampleFormControlTextarea1">Material Description</label>
                                         <textarea class="form-control txtarea" name="deskripsi" id="exampleFormControlTextarea1" rows="3">
                                         <?= $u->deskripsi ?></textarea>
                                     </div>
@@ -191,7 +186,7 @@ guru dapat terus belajar dan mengajar dimana saja dan kapan saja.
     <!-- Start Footer -->
     <footer class="main-footer">
         <div class="text-center">
-            Copyright &copy; 2020 <div class="bullet"></div><a href="https://github.com/syauqi">Syauqi Zaidan Khairan Khalaf</a>
+            Copyright &copy; 2022 <div class="bullet"></div><a href="https://github.com/rihemzorgati">Rihem Zorgati</a>
         </div>
     </footer>
     <!-- End Footer -->
